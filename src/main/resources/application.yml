@@ -1,0 +1,19 @@
+spring:
+  jpa:
+    hibernate:
+      ddl-auto: update
+  datasource:
+    drvier-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://${MYSQL_HOST:localhost}:3306/blog_db?allowPublicKeyRetrieval=true&useSSL=false
+    username: root
+    password: P@ssw0rd
+
+shiro-redis:
+  enabe: true
+  redis-manager:
+    host: 127.0.0.1:6379
+
+jwt:
+  secret: jwtsecret123456
+  expire: 7*24*60*60*1000 // ms
+  header: token

@@ -1,0 +1,9 @@
+spring:
+  jpa:
+    hibernate:
+      ddl-auto: update
+  datasource: #Using in memory database for unit test
+    drvier-class-name: org.hsqldb.jdbcDriver
+    url: jdbc:h2:mem:blog_db
+    username: sa
+    password:
